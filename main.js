@@ -21,6 +21,7 @@ function salvarUser(){
     if(nomeUser){
         dadosLista.push(nomeUser);
         // console.log(dadosLista);
+        criarLista();
         document.getElementById('nomeUser').value = "";
     }
 
@@ -34,5 +35,6 @@ function criarLista(){
     let tabela = "<tr><th>Nome</th><th>Ações</th></tr>";
     for(let i = 0; i <= (dadosLista.length -1); i++){
         tabela += "<tr><td>" +dadosLista[i] + "</td> <td> </td></tr>";
+        document.getElementById('tabela').innerHTML = tabela;
     }
 }

@@ -28,3 +28,11 @@ function salvarUser(){
         alert("Favor preencher o campo");
     }
 }
+
+// Função para criar lista de nomes
+function criarLista(){
+    let tabela = "<tr><th>Nome</th><th>Ações</th></tr>";
+    for(let i = 0; i <= (dadosLista.length -1); i++){
+        tabela += "<tr><td>" +dadosLista[i] + "</td> <td> </td></tr>";
+    }
+}
